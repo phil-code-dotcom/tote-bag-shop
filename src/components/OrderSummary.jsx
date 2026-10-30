@@ -1,4 +1,5 @@
 import { CreditCard, Info } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 function Row({ label, value, desktopOnly }) {
   return (
@@ -10,6 +11,8 @@ function Row({ label, value, desktopOnly }) {
 }
 
 function OrderSummary() {
+
+    const navigate = useNavigate();
   return (
     <div>
       <div className="space-y-3 rounded-lg md:border md:border-gray-200 md:p-4">
@@ -31,7 +34,7 @@ function OrderSummary() {
         </p>
       </div>
 
-      <button className="mt-4 flex w-full items-center justify-between rounded border border-gray-300 px-4 py-3 text-xs md:border-0 md:bg-[#06201c] md:text-white">
+      <button onClick={() => navigate("/payment")} className="mt-4 flex w-full items-center justify-between rounded border border-gray-300 px-4 py-3 text-xs md:border-0 md:bg-[#06201c] md:text-white">
         Payment options <CreditCard size={16} />
       </button>
     </div>

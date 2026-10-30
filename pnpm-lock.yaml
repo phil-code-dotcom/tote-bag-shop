@@ -26,6 +26,9 @@ importers:
       react-router-dom:
         specifier: ^7.18.5
         version: 7.18.5(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      react-svg-credit-card-payment-icons:
+        specifier: ^6.0.4
+        version: 6.0.4(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -658,6 +661,18 @@ packages:
       react-dom:
         optional: true
 
+  react-svg-credit-card-payment-icons@6.0.4:
+    resolution: {integrity: sha512-kp8Dhk5kedjPMmFIzkeIQKa1NouOEVymwiXwPcKEcIBVM4qzxQdEd5fMTl9H5fVTCZWviX/g0tjd6RCCpvbUYw==}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+      react-native-svg: '>=12'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native-svg:
+        optional: true
+
   react@19.3.1:
     resolution: {integrity: sha512-QNhWdt7nrgVWWQG58QuGsAR3jv3Hbe4mb4vz7w2csnHavciZJgda1CPNaldF6eVxv90ud3jUXpKlHL69gO38yw==}
     engines: {node: '>=0.10.0'}
@@ -1123,6 +1138,12 @@ snapshots:
       cookie: 1.1.1
       react: 19.3.1
       set-cookie-parser: 2.7.3
+    optionalDependencies:
+      react-dom: 19.3.1(react@19.3.1)
+
+  react-svg-credit-card-payment-icons@6.0.4(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
+    dependencies:
+      react: 19.3.1
     optionalDependencies:
       react-dom: 19.3.1(react@19.3.1)
 

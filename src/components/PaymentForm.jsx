@@ -1,8 +1,9 @@
 import { FaCcMastercard } from "react-icons/fa";
+import { PaymentIcon } from 'react-svg-credit-card-payment-icons';
 import Button from "./Button";
 
 const inputStyle =
-  "w-full rounded border border-teal-200 bg-white p-3 text-sm outline-none";
+  "w-full rounded border-none bg-[#f1ffff] p-3 text-sm outline-none";
 
 function PaymentForm() {
   return (
@@ -11,7 +12,8 @@ function PaymentForm() {
         <label>Card Number</label>
         <div className="relative mt-1">
           <input type="text" placeholder="5355 0348 5945 5045" className={inputStyle} />
-          <FaCcMastercard size={22} className="absolute right-3 top-3 text-orange-500" />
+          {/* <FaCcMastercard size={22} className="absolute right-3 top-3 text-orange-500" /> */}
+          <PaymentIcon type="Mastercard" format="logo" width={40} className="absolute right-3 top-3 text-orange-500" />
         </div>
       </div>
 

@@ -8,26 +8,29 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Payment from "./pages/Payment";
 
-
-
 function App() {
   return (
     <>
-      <div className="mx-auto max-w-[1240px] px-4">
-        <Navbar />
-        <SearchBar />
-        <CategoryFilter />
+      <div className="bg-[#FAFFFF]">
+        <div className="mx-auto max-w-[1240px] px-4">
+          <Navbar />
+          <SearchBar />
+          <CategoryFilter />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/payment" element={<Payment />} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/payment" element={<Payment />} />
 
-        </Routes>
+          </Routes>
+        </div>
+
+        <Footer />
+        
       </div>
 
-      <Footer />
+      
     </>
   );
 }

@@ -1,3 +1,4 @@
+
 import tote1 from "../assets/tote-1.jpeg";
 import tote2 from "../assets/tote-2.png";
 
