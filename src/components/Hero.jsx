@@ -1,6 +1,8 @@
 
-import tote1 from "../assets/tote-1.jpeg";
-import tote2 from "../assets/tote-2.png";
+// import tote1 from "../assets/tote-1.jpeg";
+// import tote2 from "../assets/tote-2.png";
+import tote1 from "../assets/tote-1-edit.png";
+import tote2 from "../assets/tote-2-edit.png";
 
 function Hero() {
   const dots = [1, 2, 3, 4]; // 4 slider dots
@@ -36,12 +38,12 @@ function Hero() {
         <img
           src={tote1}
           alt="Woman carrying a leather totebag"
-          className="absolute left-[27%] bottom-0 w-[400px]"
+          className="absolute left-[25%] bottom-0 w-[400px]"
         />
         <img
           src={tote2}
           alt="Woman in a hat carrying a totebag"
-          className="absolute bottom-0 right-12 h-9/10 w-[380px]"
+          className="absolute bottom-0 right-25 h-9/10 w-[270px]"
         />
       </div>
     </section>

@@ -3,7 +3,7 @@ import Button from "./Button";
 function FeatureCard({ image, title, text, buttonText, wide }) {
   return (
     <div
-      className={`relative h-80 overflow-hidden rounded-2xl ${
+      className={`relative h-100 overflow-hidden rounded-2xl ${
         wide ? "flex-[2]" : "flex-1"
       }`}
     >
