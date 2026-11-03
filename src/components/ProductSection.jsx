@@ -8,7 +8,7 @@ function ProductSection({ title, subtitle, products }) {
 
       <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
         {products.map((product) => (
-          <Link to={"/checkout"}>
+          <Link to={"/cart"}>
             <div key={product.id} className="flex  flex-col gap-1 md:gap-5">
               <img
                 src={product.image}

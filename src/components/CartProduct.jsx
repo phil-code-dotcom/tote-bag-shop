@@ -13,7 +13,7 @@ const sizes = ["XL", "L", "S", "M"];
 function CartProduct() {
     return (
         <section>
-            <div className="hidden md:block">
+            <div className="hidden md:block mt-10">
                 <h1 className="text-3xl">Your Cart.</h1>
                 <p className="text-sm">Review and manage the items in your shopping cart.</p>
             </div>
@@ -98,8 +98,8 @@ function CartProduct() {
 
                     <select className="mt-4 w-full rounded-lg border border-teal-200 bg-gray-100 p-3 text-teal-900">
                         <option>Select your location</option>
-                        <option>Abuja</option>
-                        <option>Lagos</option>
+                        <option>Jos</option>
+                        <option>Rayfield</option>
                     </select>
                 </div>
             </div>
